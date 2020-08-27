@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500&display=swap');
+@import 'reset.css';
+
+body {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-color: cornflowerblue;
+}
+
+header {
+    display: flex;
+    padding: 40px 70px;
+    position: absolute;
+    z-index: 1;
+    align-items: baseline;
+}
+
+header img {
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-right: 40px;
+}
+
+a {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: fixed;
+    right: 70px;
+    top: 50px;
+}
+
+.menu::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-main {
+    background-image: url(../img/main-bc.jpg);
+}
+
+.background-third{
+    background-image: url(../img/astronaut-bc.jpg);
+}
+
+.background-sec{
+    background-image: url(../img/rocket-bc.jpg);
+}
+
+.textblock {
+    position: absolute;
+    bottom: 110px;
+    left: 70px;
+    color: white;
+    width: 420px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.link {
+    border: 2px solid white;
+    padding: 20px 45px;
+    color: white;
+    font-size: 18px;
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    margin-right: 20px;
+}
